@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang=en>
+<html>
 <head>
-  <meta charset=utf-8>
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <title>产品中心</title>
-  <link href=//118.ydmhb.com/static/product_list/css/app.c87e17c7.css rel=preload as=style>
-  <link href=//118.ydmhb.com/static/product_list/css/chunk-vendors.b7beb144.css rel=preload as=style>
-  <link href=//118.ydmhb.com/static/product_list/js/app.4513006d.js rel=preload as=script>
-  <link href=//118.ydmhb.com/static/product_list/js/chunk-vendors.2f9a513f.js rel=preload as=script>
-  <link href=//118.ydmhb.com/static/product_list/css/chunk-vendors.b7beb144.css rel=stylesheet>
-  <link href=//118.ydmhb.com/static/product_list/css/app.c87e17c7.css rel=stylesheet>
-  <script src="//118.ydmhb.com/index.php/home/index/login_status"></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="https://118.jjlangke.cn/static/produced/js/zepto_1.1.3.js?v=1.0.2"></script>
+  <link rel="stylesheet" type="text/css" href="https://118.jjlangke.cn/static/produced/css/mui.css?v=1.0.2" />
+  <link rel="stylesheet" type="text/css" href="https://118.jjlangke.cn/static/produced/css/main.css?v=1.0.2" />
+	<script src="https://118.jjlangke.cn/static/produced/js/mui.js?v=1.0.2"></script>
+	<script src="https://118.jjlangke.cn/static/produced/js/clipboard.js?v=1.0.2"></script>
+	<script src="https://118.jjlangke.cn/index.php/home/index/login_status?v=1.0.2"></script>
+	<script src="https://118.jjlangke.cn/static/produced/js/main.js?v=1.0.2"></script>
 </head>
 <body>
-<noscript><strong>We're sorry but sbkz doesn't work properly without JavaScript enabled. Please enable it to
-  continue.</strong></noscript>
-<div id=app></div>
-<script src=//118.ydmhb.com/static/product_list/js/chunk-vendors.2f9a513f.js></script>
-<script src=//118.ydmhb.com/static/product_list/js/app.4513006d.js></script>
+<div class="header" style="width: 100vw;overflow:hidden;position:relative;">
+  <textarea id="bar" readonly style="position: absolute;left:100%;width: 0px;height: 0px;"></textarea>
+  <div class="left">
+    <img id="img" src="" />
+    <span class="text" id="title"></span>
+  </div>
+  <div class="right">
+    <button class="btn" id="clipboard" data-clipboard-action="copy" data-clipboard-target="#bar">复制链接</button>
+  </div>
+</div>
+<div class="bottom">
+  <div class="content">
+    <span>请准确填写申请信息</span>
+    <div id="name_div">
+      <img src="img/my_fill.png" />
+      <input type="text" id="name" placeholder="您的姓名">
+    </div>
+    <div id="tel_div">
+      <img src="img/tel.png" />
+      <input type="text" id="tel" placeholder="手机号码">
+    </div>
+  </div>
+  <button class="apply">确定</button>
+</div>
 </body>
 </html>
